@@ -38,7 +38,6 @@ function connectToEmulator({
   firebaseApp
 }: Firebase): Firebase {
   connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
-  console.info("🎮 Firebase Auth: emulated");
   connectStorageEmulator(storage, '127.0.0.1', 9199);
   connectFirestoreEmulator(firestore, '127.0.0.1', 8080);
   connectFunctionsEmulator(functions, '127.0.0.1', 5001);
