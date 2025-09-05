@@ -17,6 +17,6 @@ export default function Login(): JSX.Element {
   );
 }
 
-// Login.getLayout = (page: ReactElement): ReactNode => (
-//   <AuthLayout>{page}</AuthLayout>
-// );
+Login.getLayout = (page: ReactElement): ReactNode => (
+  <AuthLayout>{page}</AuthLayout>
+);
